@@ -15,7 +15,7 @@ return console.log(err.message);
 console.log("Taulu tehty");
 });
 
-sql = "INSERT INTO 'kysymys' ('id', 'content')" + "VALUES (1, 'Miten menee?')";
+sql = "INSERT INTO 'kysymys' ('id', 'content')" + "VALUES (3, 'Miten kurssi sujui?')";
 db.run(sql, (err) => {
     if (err) {
         return console.log(err.message);
@@ -23,7 +23,7 @@ db.run(sql, (err) => {
     console.log("Tauluun lisätty rivi");
 });
 
-sql = "INSERT INTO 'kysymys' ('id', 'content')" + "VALUES (2, 'Mikä fiilis?')";
+sql = "INSERT INTO 'kysymys' ('id', 'content')" + "VALUES (1, '(Radio:) Kuinka hyvin projekti sujui?')";
 db.run(sql, (err) => {
     if (err) {
         return console.log(err.message);
@@ -31,7 +31,7 @@ db.run(sql, (err) => {
     console.log("Tauluun lisätty rivi");
 });
 
-sql = "INSERT INTO 'kysymys' ('id', 'content')" + "VALUES (3, 'Mikä on suomen pääkaupunki?')";
+sql = "INSERT INTO 'kysymys' ('id', 'content')" + "VALUES (2, '(Number:) Kuinka vanha olet?')";
 db.run(sql, (err) => {
     if (err) {
         return console.log(err.message);
@@ -39,7 +39,7 @@ db.run(sql, (err) => {
     console.log("Tauluun lisätty rivi");
 });
 
-sql = "INSERT INTO 'kysymys' ('id', 'content')" + "VALUES (4, 'Moikkelis?')";
+sql = "INSERT INTO 'kysymys' ('id', 'content')" + "VALUES (4, 'Lempiväri?')";
 db.run(sql, (err) => {
     if (err) {
         return console.log(err.message);
@@ -47,7 +47,7 @@ db.run(sql, (err) => {
     console.log("Tauluun lisätty rivi");
 });
 
-db.each("SELECT id, nimi FROM kysymys", function (err, row) {
+db.each("SELECT id, content FROM kysymys", function (err, row) {
     if (err) {
         return console.log(err.message);
     }

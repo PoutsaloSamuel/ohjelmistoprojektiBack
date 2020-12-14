@@ -17,7 +17,7 @@ db.run(sql, (err) => {
     });
 
 
-sql = "INSERT INTO 'vastaus' ('id', 'question', 'answer')" + "VALUES (1, 'Miten menee?', 'Hyvin')";
+sql = "INSERT INTO 'vastaus' ('id', 'question', 'answer')" + "VALUES (3, 'Miten kurssi sujui?', 'Hyvin, mutta pieniä vaikeuksia oli :)')";
 db.run(sql, (err) => {
     if (err) {
         return console.log(err.message);
@@ -25,7 +25,7 @@ db.run(sql, (err) => {
     console.log("Tauluun lisätty rivi");
 });
 
-sql = "INSERT INTO 'vastaus' ('id', 'question', 'answer')" + "VALUES (2, 'Moikkelis??', 'Moikkelis')";
+sql = "INSERT INTO 'vastaus' ('id', 'question', 'answer')" + "VALUES (1, '(Radio:) Kuinka hyvin projekti sujui 1-5?', '3')";
 db.run(sql, (err) => {
     if (err) {
         return console.log(err.message);
@@ -33,7 +33,7 @@ db.run(sql, (err) => {
     console.log("Tauluun lisätty rivi");
 });
 
-sql = "INSERT INTO 'vastaus' ('id', 'question', 'answer')" + "VALUES (3, 'Mikä on suomen pääkaupunki??', 'New york! :D')";
+sql = "INSERT INTO 'vastaus' ('id', 'question', 'answer')" + "VALUES (2, '(Number:) Kuinka vanha olet?', '22')";
 db.run(sql, (err) => {
     if (err) {
         return console.log(err.message);
@@ -41,7 +41,7 @@ db.run(sql, (err) => {
     console.log("Tauluun lisätty rivi");
 });
 
-sql = "INSERT INTO 'vastaus' ('id', 'question', 'answer')" + "VALUES (4, 'Miten menee?', 'Huonosti')";
+sql = "INSERT INTO 'vastaus' ('id', 'question', 'answer')" + "VALUES (4, 'Lempiväri?', 'Vihreä')";
 db.run(sql, (err) => {
     if (err) {
         return console.log(err.message);
